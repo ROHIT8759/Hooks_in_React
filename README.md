@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 
 ## How to Open
 * First open your code editor, then open terminal.
-* git clone
+* git clone https://github.com/ROHIT8759/Hooks_in_React.git
 * cd project01
 * npm i
 * npm run dev
