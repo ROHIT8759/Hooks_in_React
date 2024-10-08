@@ -5,8 +5,15 @@ function App() {
   let [ count, setCounter]= useState(0)
 
   const addValue =  () => {
-    //count += 1;
-    setCounter(count+1)
+    // //count += 1;
+    // setCounter(count+1)                           // Here react send all set of instruction in a bundle. So countre value inc only once.
+    // setCounter(count+1)
+    // setCounter(count+1)
+    // setCounter(count+1)
+    setCounter(prevCounter  => prevCounter +1 )     //  Here react send all set of instruction in separate way. So countre value inc by 4.
+    setCounter(prevCounter  => prevCounter +1 )
+    setCounter(prevCounter  => prevCounter +1 )
+    setCounter(prevCounter  => prevCounter +1 )
   };
   const disValue  = () => {
     //count -= 1;
